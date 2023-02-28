@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat_box_their"
+        android:layout_width="300dp"
+        app:cardBackgroundColor="#d5f7df"
+        app:cardCornerRadius="15dp"
+        android:layout_height="80dp">
+        <TextView
+            android:padding="13dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#8B231E1E"
+            android:id="@+id/their_msg"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:textColor="#8B231E1E"
+            android:id="@+id/timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30pm"
+            android:textSize="12dp"/>
+    </androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+        android:id="@+id/chat_box_me"
+        android:layout_width="300dp"
+    android:visibility="invisible"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="17dp"
+        app:cardBackgroundColor="@color/ligh_tsky"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="13dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#8B231E1E"
+            android:id="@+id/my_msg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/my_msg"
+            android:textColor="#8B231E1E"
+            android:id="@+id/timing1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30pm"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+</LinearLayout>

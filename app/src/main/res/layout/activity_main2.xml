@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="90dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom"
+        android:layout_width="230dp"
+        app:cardCornerRadius="35dp"
+        android:layout_height="60dp">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@drawable/mixcolor"
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            app:menu="@menu/custom_button"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
